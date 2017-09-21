@@ -209,9 +209,9 @@ class ConcPersistence(AbstractConcPersistence):
 
     def store(self, user_id, curr_data, prev_data=None):
         """
-        Stores current operation (defined in curr_data) into the database. If also prev_date argument is
+        Stores current operation (defined in curr_data) into the database. If also prev_data argument is
         provided then a comparison is performed and based on the result, new record is created and new
-        ID is returned on nothing is done and current ID is returned.
+        ID is returned or nothing is done and current ID is returned.
 
         arguments:
         user_id -- database ID of the current user
